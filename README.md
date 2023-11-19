@@ -6,12 +6,12 @@ Head is a command line tool that displays the first n lines or bytes of a file, 
 
 This challenge is a good way for me to familiarise myself with unix commands and shell scripting.
 
-To set up, add the following alias to `~/.bashrc` or `~/.zshrc`: `alias uhead=bash /Users/simonteo/GitHub/uhead/uhead.sh`
+To set up, add the following alias to `~/.bashrc` or `~/.zshrc`: `alias uhead=bash /{filepath}/uhead/uhead.sh`
 
 Interesting commands to try:
 
-- `uhead -c1000 /Users/simonteo/GitHub/uhead/test1.txt`
-- `uhead -c1000 /Users/simonteo/GitHub/uhead/test2.txt`
-- `uhead -n50 /Users/simonteo/GitHub/uhead/test1.txt`
-- `uhead -n50 /Users/simonteo/GitHub/uhead/test2.txt`
+- `uhead -c1000 /{filepath}/uhead/test1.txt`
+- `uhead -c1000 /{filepath}/uhead/test2.txt`
+- `uhead -n50 /{filepath}/uhead/test1.txt`
+- `uhead -n50 /{filepath}/uhead/test2.txt`
 - `uhead`

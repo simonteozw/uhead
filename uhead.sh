@@ -22,10 +22,12 @@ handle_nofile() {
 
 handle_file_bytes() {
   # 1 char = 1 byte
-  for i in $(seq 1 1);
+  while [[ $num_bytes -gt 0 ]];
   do
     IFS= read -n $num_bytes bytes
+    len=$( echo -n "$bytes" | wc -c)
     echo $bytes
+    num_bytes=$((num_bytes - len))
   done < $1
 }
 
